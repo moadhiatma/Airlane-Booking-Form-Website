@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <title>AIRLINE BOOKING FORM</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <h2 id="title">AIRLINE BOOKING FORM</h2>
+        <div class="square">
+            <div>
+                <h3 class="textMargin">Booking Details</h3>
+                <hr align="left" color="deepskyblue" size="1px" >
+            </div>
+            <form>
+                <div class="form">
+                    <div>
+                        <select id="from" class="trans">
+                            <option selected="selected" disabled="disabled" class="black2">From</option>
+                            <option value="jakarta" class="black">Jakarta</option>
+                            <option value="singapura" class="black">Singapura</option>
+                            <option value="kuala_lumpur" class="black">Kuala Lumpur</option>
+                            <option value="canberra" class="black">Canberra</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="to" class="trans">
+                            <option selected="selected" disabled="disabled" class="black2">To</option>
+                            <option value="tokyo" class="black">Tokyo</option>
+                            <option value="seoul" class="black">Seoul</option>
+                            <option value="beijing" class="black">Beijing</option>
+                            <option value="moskow" class="black">Moskow</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <select id="airline" class="trans">
+                            <option selected="selected" disabled="disabled" class="black2">Preferred Airline</option>
+                            <option value="garuda" class="black">Garuda Indonesia</option>
+                            <option value="air" class="black">Air Asia</option>
+                            <option value="lion" class="black">Lion Air</option>
+                            <option value="citilink" class="black">Citilink</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="class" class="trans">
+                            <option selected="selected" disabled="disabled" class="black2">Cabin Class</option>
+                            <option value="satu" class="black">First Class</option>
+                            <option value="bisnis" class="black">Business Class</option>
+                            <option value="ekonomi" class="black">Economy Class</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <input type="text" placeholder="Departure Time" class="date" id=dTime
+                            onfocus="(this.type='time')" onblur="(this.type='text')"> 
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Departure Date" class="date" id=dDate
+                            onfocus="(this.type='date')" onblur="(this.type='text')"> 
+                    </div>
+                </div>
+                <div class="textSize">
+                    <label class="blue">Select Your Fare</label>
+                    <label class="white"><input type="radio" name="fare" value="oneWay" id="box" onclick="enableText()">One Way</label>
+                    <label class="white"><input type="radio" name="fare" value="roundTrip" id="box2" onclick="enableText2()">Round-Trip</label>
+                </div>
+                <div class="form2">
+                    <div>
+                        <input type="text" placeholder="Return Time (Round-Trip)" id="time" class="trans"
+                            onfocus="(this.type='time')" onblur="(this.type='text')" disabled> 
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Return Date (Round-Trip)" id="time2" class="trans"
+                            onfocus="(this.type='date')" onblur="(this.type='text')" disabled> 
+                    </div>
+                </div>
+                <div class="textArea">
+                    <textarea name="message" id="textbox" placeholder="Any message" class="trans"></textarea>
+                </div>
+                <div>
+                    <h3 class="textMargin">Personal Details</h3>
+                    <hr align="left" color="deepskyblue" size="1px" >
+                </div>
+                <div class="form">
+                    <div>
+                        <input type="text" placeholder="First Name" class="personal" id="fName">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Last Name" class="personal" id="lName">
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <input type="email" placeholder="E-mail" class="personal" id="email">
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Phone Number" class="personal" id="phone">
+                    </div>
+                </div>
+                <div class="form">
+                    <div>
+                        <input type="submit" value="Submit" class="btn" id="alert" onclick="validate()">
+                        <input type="reset" value="Reset" class="btn2">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <footer>
+                <p id="footer">&copy; 2020. Airline Booking Form. All Right Reserved | Design by Adhiatma</p>
+            </footer>
+        </div>
+    </body>
+</html>

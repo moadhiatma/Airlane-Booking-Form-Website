@@ -1,0 +1,134 @@
+.square {
+    background: rgba(0,0,0,0.90);
+    width: 700px;
+    margin: 40px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 3px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    background-size: 100px;
+}
+.form2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 3px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    background-size: 100px;
+}
+.textArea {
+    margin: 3px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    background-size: 100px;
+}
+.date {
+    background: rgba(0,0,0,0.10);
+    color: white;
+    border: none;
+    width: 320px;
+    height: 20px;
+}
+.textMargin {
+    margin-left: 10px;
+    margin-top: 0px;
+    padding-top: 10px;
+    color: white;
+}
+.personal {
+    background: rgba(0,0,0,0.10);
+    color: white;
+    border: none;
+    width: 320px;
+    height: 20px;
+}
+.textSize {
+    margin-left: 10px;  
+    margin-top: 10px;
+    font-size: 14px;    
+}
+.btn {
+    background: rgb(240, 119, 6);
+    color: white;
+    border: none;
+    width: 90px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn2 {
+    background: deepskyblue;
+    color: white;
+    border: none;
+    width: 90px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.trans {
+    background: rgba(0,0,0,0.10);
+    border: none;
+    color: white;
+}
+.white {
+    color: white;
+}
+.blue {
+    color:deepskyblue;
+}
+.black {
+    background-color: rgba(0,0,0,0.90);
+}
+.black2 {
+    background-color: black;
+    font-weight: bold;
+}
+select {
+    width: 320px;
+    height: 20px;
+}
+select:focus {
+    min-width: 150px;
+    width: 320px;
+}
+body {
+    background-image: url(airplane.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+hr {
+    margin-left: 10px;
+    margin-top: -10px;
+    width: 135px;
+}
+#title {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#time {
+    width: 320px;
+    height: 20px;
+}
+#time2 {
+    width: 320px;
+    height: 20px;
+}
+#textbox {
+    width: 668px;
+    height: 40px;
+}
+#footer {
+    font-size: smaller;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
